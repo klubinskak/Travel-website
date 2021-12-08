@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#home{
+    background-image: url(/img/s-migaj-Yui5vfKHuzs-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-size : 100% auto; /* resizing background image to fit to the screen */
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    height: auto;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.nav-links li{
+    padding: 0 20px;
+}
+.nav-links li a{
+    transition: all 0.3s ease 0s; 
+}
+.nav-links li a:hover{
+    color: #e9ecef;
+}
+#Places {
+    height: 55vh;
+    background: #40798c;
+}
+#About-us{
+    background: url(/img/video.mp4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-size : 100% auto; 
+}
+.about-us-content{
+    font-size: 25px;
+    color: white;
+    font-family: inherit;
+    font-weight: 500;
+    margin: 50px;
+    padding: 20px;
+}
+
+h2{
+    margin: 20px;
+}
+.card{
+    display: flex;
+    color: white;
+    text-align: center;
+}
+.card-container{
+    padding: 60px;
+}
+.img{
+    object-fit: cover;
+}
+.logo{
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.btn{
+    padding: 12px 35px;
+    background-color: #48bfe3;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: inherit;
+}
+.btn:hover{
+    background-color: #0091ad;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.main-content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    font-size: 30px;
+    align-items: center;
+}
+#description-p{
+    margin: 0 100px 30px 100px;
+}
+.wrapper{
+    align-items: center;
+    text-align: center;
+    background: rgb(206, 212, 218, 0.5);
+    margin: 130px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    #home{
+        height: 50vh;
+    }
+    .main-content h1{
+        padding: 0 20px 20px 20px;
+        margin: 0 50px 0 50px;
+    }
+    #description-p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .card{
+        display: flex;
+    }
+    .wrapper{ 
+        margin: 40px;
+    }
+    #About-us{
+        height: fit-content;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .main-content{
+        height: 50vh;
+        align-items: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #home{
+        height: 100vh;
+    }
+}
+
